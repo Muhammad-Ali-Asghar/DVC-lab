@@ -57,7 +57,7 @@ def predict():
             try:
                 encoded = int(le.transform([val])[0])
             except Exception as e:
-                return f"Unexpected cate value for {feat}: {val}", 400
+                return f"Unexpected categor value for {feat}: {val}", 400
             row.append(encoded)
         else:
             # numeric
